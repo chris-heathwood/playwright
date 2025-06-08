@@ -1,6 +1,8 @@
 jobs:
   test:
     container: mcr.microsoft.com/playwright:v1.52.0-jammy
+    env:
+      HOME: /root
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
